@@ -53,31 +53,50 @@
 #Card-Container-Section {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 300px);
-    gap: 40px;
-    margin: 50px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 250px);
+    gap: 30px;
+    padding: 40px;
 }
 
 #app, #web, #ux{
-    width: 200px;
-    height: 20px;
+    box-shadow: 2px 4px 6px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    height: 340px;
 }
 
-#Card-Container-Section img {
-    height: 200px;
+
+#app img, #web img, #ux img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
-#Card-Container-Section h4 {
-    margin: 10px;
+#ux img {
+    height: 170px;
+    /* object-fit: cover; */
 }
 
-#Card-Container-Section p {
-    margin-bottom: 20px;
+h4 {
+    padding: 15px 15px 11px 15px;
 }
 
-#app {
-    box-sizing: border-box;
-    box-shadow: 10px 3px 10px 12px black;
+#para1, #para2, #para3 {
+    padding: 0 15px 15px 15px;
+    font-size: 15px;
 }
 
+.contact {
+    background-color: rgb(7, 112, 7);
+    width: 600px;
+    height: 180px;
+}
+
+.aboutMe {
+    background-color: rgb(209, 66, 13);
+    width: 600px;
+    height: 180px;
+}
+
+#Bottom-Section {
+    display: flex;
+    justify-content: space-around;
+}
