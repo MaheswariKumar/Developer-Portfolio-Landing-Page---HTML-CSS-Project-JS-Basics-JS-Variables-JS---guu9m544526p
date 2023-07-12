@@ -7,22 +7,28 @@
 }
 
 #Hero-Section {
-    background-image: url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-image: url("https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 710px;
 }
 
 #about {
     color: black;
+    text-align: center;
 }
 
 #h1-1 {
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
-    text-align: right;
+    /* text-align: center; */
     position: relative;
-    right: 380px;
+    right: 135px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    /* position: absolute;
+    right: 350px; */
 }
 
 #name {
@@ -33,8 +39,10 @@
 #h1-2 {
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
-    right: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* position: absolute;
+    right: 350px; */
 }
 
 #Black-Box-Section {
@@ -85,18 +93,94 @@ h4 {
 }
 
 .contact {
-    background-color: rgb(7, 112, 7);
+    background-color: rgb(4, 85, 4);
     width: 600px;
-    height: 180px;
+    height: 200px;
+    padding: 25px;
+}
+
+.contact h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+}
+
+.contact nav {
+    padding-top: 15px;
 }
 
 .aboutMe {
-    background-color: rgb(209, 66, 13);
+    background-color: rgb(137, 43, 9);
     width: 600px;
-    height: 180px;
+    height: 200px;
+    padding: 25px;
+}
+
+.aboutMe h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+}
+
+.aboutMe p:last-child {
+    padding-top: 15px;
 }
 
 #Bottom-Section {
     display: flex;
     justify-content: space-around;
+}
+
+
+@media screen and (max-width: 768px) {
+    #h1-1 {
+      font-size: 30px;
+      right: 0;
+    }
+    #h1-2 {
+      font-size: 30px;
+      right: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    #Card-Container-Section {
+      grid-template-columns: repeat(1, 100%);
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #app,
+    #web,
+    #ux {
+      height: auto;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    #app img,
+    #web img,
+    #ux img {
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #Bottom-Section {
+      flex-direction: column;
+    }
+    .contact,
+    .aboutMe {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    #Black-Box-Section p {
+      font-size: 30px;
+    }
+    #Black-Box-Section span {
+      font-size: 40px;
+    }
 }
